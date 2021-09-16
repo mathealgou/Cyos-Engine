@@ -2,7 +2,7 @@
   <div>
     <title-bar/>
     <div class="d-flex justify-center">
-    <v-btn to="./game" class="ma-2" color="success" x-large>Play</v-btn>
+    <v-btn to="./game" class="ma-2" color="green" dark x-large>Play</v-btn>
     </div>
   </div>
 </template>
