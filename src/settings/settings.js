@@ -1,4 +1,10 @@
 export const settings = {
-    gameTitle: "Cyos exemple"
+    gameTitle: "Cyos exemple",
+    style: {
+        optionButtons: {
+            color: "green",
+            dark: true,
+        },
+    },
 }
 
