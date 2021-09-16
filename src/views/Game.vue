@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <v-app-bar height="100" class="d-flex justify-center align-center text-h3 text-center">
+    <v-app-bar height="100" class="ma-10 d-flex justify-center align-center text-h3 text-center">
         {{currentPage.title}}
     </v-app-bar>
     <v-card class="ma-10 pa-5" >
@@ -9,7 +9,7 @@
      
     </v-card>
     <div width="80%" class="d-flex justify-center align-start flex-wrap text-center">
-      <v-btn v-for="option in currentPage.options" :key="option" @click="goToPage(option.goTo)" class="ma-5" color="green" dark>
+      <v-btn v-for="option in currentPage.options" :key="option.name" @click="goToPage(option.goTo)" class="ma-5" color="green" dark>
         {{option.name}}
       </v-btn>
     </div>
