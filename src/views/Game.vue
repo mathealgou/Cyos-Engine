@@ -23,7 +23,6 @@ export default {
     return {
       story: story,
       currentPage: story.page1,
-      options: ["opt 1", "opt 2"],
     };
   },
   methods: {
