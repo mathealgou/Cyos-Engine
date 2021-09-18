@@ -1,7 +1,10 @@
+import img1 from"../images/1.png"
+
 export const story = {
     page1: {
         title: "Page 1",
         text: "You have two options. You can to page 2 or page 3",
+        backgroundImage: img1,
         options: [
             {
                 name: "Go to page 2",
