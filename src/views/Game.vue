@@ -1,5 +1,7 @@
 <template>
-  <v-main>
+  <v-main 
+   class=" bg-no-repeat bg-cover  bg-white hero relative"
+  :style="{ 'background-image': `url(${backgroundImage})` }">
     <v-btn to="./" class="mt-1 mb-2" :color="settings.style.optionButtons.color" :dark="settings.style.optionButtons.dark" >
       <v-icon>
         mdi-arrow-left
@@ -31,16 +33,25 @@ export default {
       story: story,
       currentPage: story.page1,
       settings: settings,
+      backgroundImage: story.page1.backgroundImage,
     };
   },
   methods: {
     goToPage(page) {
       let newPage = `page${page}`;
       this.currentPage = this.story[newPage];
+      this.backgroundImage = this.story[newPage].backgroundImage;
     },
   },
 };
 </script>
 
-<style>
+<style scoped>
+.v-main {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 </style>
