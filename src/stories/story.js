@@ -1,5 +1,8 @@
 //Here is where you import the background images for your pages
 import exemple1 from"../images/exemple1.png"
+import exemple2 from"../images/exemple2.png"
+import exemple3 from"../images/exemple3.png"
+
 
 //Here's where the pages of your story go.
 //Every page has some properties, lets go through them:
@@ -41,6 +44,7 @@ export const story = {
     page2: {
         title: "Page 2",
         text: "aaaaaaaaa",
+        backgroundImage: exemple2,
         options: [
             {
                 name: "Go to page 1",
@@ -55,6 +59,7 @@ export const story = {
     page3: {
         title: "Page 3",
         text: "Page 3",
+        backgroundImage: exemple3,
         options: [
             {
                 name: "Go to page 1",
