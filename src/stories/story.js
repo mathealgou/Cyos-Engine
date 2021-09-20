@@ -28,46 +28,38 @@ import exemple3 from"../images/exemple3.png"
 export const story = {
     page1: {
         title: "Page 1",
-        text: "You have two options. You can to page 2 or page 3",
+        text: "You're facing a tough question. As you're abou to create a text adventure game, you have two options, you may either use CYOS engine, or go with some other one. What are you going to do?",
         backgroundImage: exemple1,
         options: [
             {
-                name: "Go to page 2",
+                name: "Use CYOS",
                 goTo: 2
             },
             {
-                name: "Go to page 3",
+                name: "Betrayal",
                 goTo: 3
             }
         ]
     },
     page2: {
-        title: "Page 2",
-        text: "aaaaaaaaa",
+        title: '"Pro-grammer move"',
+        text: "You have made the right decision. You may proceed to your gamery quest!",
         backgroundImage: exemple2,
         options: [
             {
                 name: "Go to page 1",
                 goTo: 1
-            },
-            {
-                name: "Go to page 3",
-                goTo: 3
             }
         ]
     },
     page3: {
-        title: "Page 3",
-        text: "Page 3",
+        title: "You're a traitor!",
+        text: "You've made the wrong choice. Go back to page one!",
         backgroundImage: exemple3,
         options: [
             {
                 name: "Go to page 1",
                 goTo: 1
-            },
-            {
-                name: "Go to page 2",
-                goTo: 2
             }
         ]
     }
