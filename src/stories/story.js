@@ -3,7 +3,6 @@ import exemple1 from"../images/exemple1.png"
 import exemple2 from"../images/exemple2.png"
 import exemple3 from"../images/exemple3.png"
 
-
 //Here's where the pages of your story go.
 //Every page has some properties, lets go through them:
 //
@@ -30,6 +29,7 @@ export const story = {
         title: "Page 1",
         text: "You're facing a tough question. As you're abou to create a text adventure game, you have two options, you may either use CYOS engine, or go with some other one. What are you going to do?",
         backgroundImage: exemple1,
+        backgroundSong: "exempleSong1.mp3",
         options: [
             {
                 name: "Use CYOS",
@@ -45,6 +45,7 @@ export const story = {
         title: '"Pro-grammer move"',
         text: "You have made the right decision. You may proceed to your gamery quest!",
         backgroundImage: exemple2,
+        backgroundSong: "exempleSong2.mp3",
         options: [
             {
                 name: "Go to page 1",
@@ -56,6 +57,7 @@ export const story = {
         title: "You're a traitor!",
         text: "You've made the wrong choice. Go back to page one!",
         backgroundImage: exemple3,
+        backgroundSong: "exempleSong3.mp3",
         options: [
             {
                 name: "Go to page 1",
